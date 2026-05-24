@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Api Pokemon</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gestión de Pokémon</h1>
+    </header>
+    <main>
+        <section> <!--formulario no formulario para que hable con el script-->
+            <input type="text" id="pokemonName" placeholder="Ingrese el nombre del Pokemon">
+            <button id="btnBuscar">Buscar</button>
+            <button id="btnGuardar">Guardar</button>
+            <button id="btnListar">Listar guardados</button>
+            <button id="btnActualizar">Actualizar</button>
+            <button id="btnEliminar">Eliminar</button>
+            </section>
+
+            <section id="infoPokemon">
+                <p>Información del Pokémon</p>
+            </section>
+
+            <section id="listaPokemon"></section>
+    </main>
+    <div id="modalActualizar" class="modal">
+
+    <div class="modal-contenido">
+
+        <h2>Actualizar Pokémon</h2>
+
+        <input type="text" id="txtNombreActualizar" placeholder="Nombre">
+
+        <input type="text" id="txtTipoActualizar" placeholder="Tipo">
+
+        <input type="number" id="txtFuerzaActualizar" placeholder="Fuerza">
+
+        <input type="number" id="txtAlturaActualizar" placeholder="Altura">
+
+        <input type="number" id="txtPesoActualizar" placeholder="Peso">
+
+        <div class="botones-modal">
+            <button id="btnGuardarActualizacion">Guardar cambios</button>
+            <button id="btnCerrarModal">Cancelar</button>
+        </div>
+
+    </div>
+
+</div>
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+</body>
+
+</html>
